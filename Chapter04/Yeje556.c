@@ -24,6 +24,7 @@ void prog_13();
 void prog_14();
 void prog_15();
 void prog_16();
+void prog_17();
 int str_chr(char *s, char c);
 void str_array(char *s);
 void str_chrnum(char *s);
@@ -46,11 +47,58 @@ int main(void)
 	//prog_11();
 	//prog_12();
 	//prog_13();
-	prog_14();
+	//prog_14();
 	//prog_15();
 	//prog_16();
+	prog_17();
+
+}
+void prog_17()
+{
+#define SIZE 100
+
+	
+		int i, j, k;
+		char text[SIZE];
+
+		printf("광고하고 싶은 텍스트를 입력하시오: ");
+		gets(text);
+
+		for (i = 0; text[i] != NULL; i++);
+		j = i;
+		k = 0;
+		while (1) {
+			system("cls");
+			for (i = 0; i < j; i++)
+				printf("%c", text[(i + k) % j]);
+			k++;
+			Sleep(500);
+		}
+		return 0;
 	
 
+
+
+}
+void prog_16()
+{
+	char str[100];
+	int size, i, k, x = 10, y = 10;
+	printf("광고를 하고 싶은 텍스트를 입력하시옹 : ");
+	gets(str);
+	size = strlen(str);
+	k = 0;
+	while (1)
+	{
+	//	COORD pos = { x,y };
+	//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE);
+
+			for (i = k; i < (k + size); i++)
+			{
+				printf(*(str + 1 % size));
+			}
+		
+	}
 }
 void prog_14()
 {
