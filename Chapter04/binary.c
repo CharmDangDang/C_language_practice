@@ -43,6 +43,6 @@ int main()
 	b = a++ - 5;
 	printf("%d",b);
 	printf("%d",a);
-	f = 10 + 20;
-	printf("呈公 凉府匙")
+	int f = 10 + 20;
+	printf("呈公 凉府匙");
 }
